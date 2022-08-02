@@ -1,0 +1,61 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.menu {
+    font-size: 0;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-item-link {
+    display: block;
+    padding: 15px 20px;
+    background: darkgrey;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.menu-inner {
+    display: none;
+    position: absolute;
+}
+
+.menu-inner .menu-item {
+    display: block;
+}
+
+.menu-item:hover .menu-inner{
+    display: block;
+}
+
+.menu-item-link:hover {
+    background: blue;
+}
+
+.sub-menu {
+    position: absolute;
+    display: none;
+    left: 100%;
+    top: 47px;
+}
+
+.menu-sub-item {
+    width: 120px;
+    text-align: center;
+}
+
+.menu-inner .menu-item:hover .sub-menu {
+    display: block;
+}
+
+
